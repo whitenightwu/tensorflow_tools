@@ -1,0 +1,67 @@
+
+== cat /etc/issue ===============================================
+Linux aries 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+VERSION="14.04.5 LTS, Trusty Tahr"
+VERSION_ID="14.04"
+
+== are we in docker =============================================
+No
+
+== compiler =====================================================
+c++ (Ubuntu 4.8.5-2ubuntu1~14.04.1) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+== uname -a =====================================================
+Linux aries 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+== check pips ===================================================
+numpy (1.11.3)
+numpydoc (0.6.0)
+protobuf (3.5.1)
+
+== check for virtualenv =========================================
+False
+
+== tensorflow import ============================================
+tf.VERSION = 1.2.1
+tf.GIT_VERSION = v1.2.0-5-g435cdfc
+tf.COMPILER_VERSION = v1.2.0-5-g435cdfc
+Sanity check: array([1], dtype=int32)
+
+== env ==========================================================
+LD_LIBRARY_PATH /usr/local/lib:/usr/lib:/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:/home/ydwu/build_master_release/lib:/usr/local/cuda/lib64
+DYLD_LIBRARY_PATH is unset
+
+== nvidia-smi ===================================================
+Thu Mar 22 10:28:30 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 367.57                 Driver Version: 375.39                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Graphics Device     Off  | 0000:03:00.0      On |                  N/A |
+| 49%   82C    P2   129W / 250W |   8142MiB / 11171MiB |     51%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     Off  | 0000:04:00.0     Off |                  N/A |
+| 43%   71C    P2   124W / 250W |  10595MiB / 11172MiB |     64%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1678    G   /usr/bin/X                                      50MiB |
+|    0     24052    C   python                                        8087MiB |
+|    1     21069    C   python                                        4737MiB |
+|    1     38571    C   python                                        5855MiB |
++-----------------------------------------------------------------------------+
+
+== cuda libs  ===================================================
+/usr/local/cuda-8.0/doc/man/man7/libcudart.7
+/usr/local/cuda-8.0/doc/man/man7/libcudart.so.7
+/usr/local/cuda-8.0/lib64/libcudart_static.a
+/usr/local/cuda-8.0/lib64/libcudart.so.8.0.44

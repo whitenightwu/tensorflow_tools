@@ -1,0 +1,181 @@
+CHECKPOINT_FILE=/home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp/mobilenet_v1_1.0_224.ckpt
+DATASET_DIR=/mllib/ImageNet/ILSVRC2012_tensorflow
+
+
+CUDA_VISIBLE_DEVICES=1 python eval_image_classifier.py \
+    --alsologtostderr \
+    --checkpoint_path=${CHECKPOINT_FILE} \
+    --dataset_dir=${DATASET_DIR} \
+    --dataset_name=imagenet \
+    --dataset_split_name=validation \
+    --model_name=mobilenet_v1 \
+    --max_num_batches=10
+
+
+
+
+
+####################################################################################
+
+ydwu@aries:~/framework/tensorflow22/tensorflow/tensorflow-models/research/slim$ ./111.sh 
+
+<tensorflow.contrib.slim.python.slim.data.tfexample_decoder.TFExampleDecoder object at 0x7f4871cbeef0>
+/mllib/ImageNet/ILSVRC2012_tensorflow/validation-*
+<class 'tensorflow.python.ops.io_ops.TFRecordReader'>
+Select the dataset--->ok
+Select the model--->ok
+loads data--->ok
+INFO:tensorflow:Scale of 0 disables regularizer.
+WARNING:tensorflow:From eval_image_classifier.py:166: streaming_recall_at_k (from tensorflow.contrib.metrics.python.ops.metric_ops) is deprecated and will be removed after 2016-11-08.
+Instructions for updating:
+Please use `streaming_sparse_recall_at_k`, and reshape labels from [batch_size] to [batch_size, 1].
+INFO:tensorflow:Evaluating /home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp/mobilenet_v1_1.0_224.ckpt
+
+ydwu=============444
+INFO:tensorflow:Starting evaluation at 2018-01-31-02:35:00
+2018-01-31 10:35:00.399752: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-31 10:35:00.399798: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-31 10:35:00.726708: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-01-31 10:35:00.727350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: Graphics Device
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:03:00.0
+Total memory: 10.91GiB
+Free memory: 10.36GiB
+2018-01-31 10:35:01.050299: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x48ff4f0 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-01-31 10:35:01.050801: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-01-31 10:35:01.051375: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 1 with properties: 
+name: Graphics Device
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:04:00.0
+Total memory: 10.91GiB
+Free memory: 10.76GiB
+2018-01-31 10:35:01.052530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 1 
+2018-01-31 10:35:01.052551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y Y 
+2018-01-31 10:35:01.052564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   Y Y 
+2018-01-31 10:35:01.052587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Graphics Device, pci bus id: 0000:03:00.0)
+2018-01-31 10:35:01.052602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Graphics Device, pci bus id: 0000:04:00.0)
+
+INFO:tensorflow:Restoring parameters from /home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp/mobilenet_v1_1.0_224.ckpt
+INFO:tensorflow:Evaluation [1/10]
+INFO:tensorflow:Evaluation [2/10]
+INFO:tensorflow:Evaluation [3/10]
+INFO:tensorflow:Evaluation [4/10]
+INFO:tensorflow:Evaluation [5/10]
+INFO:tensorflow:Evaluation [6/10]
+INFO:tensorflow:Evaluation [7/10]
+INFO:tensorflow:Evaluation [8/10]
+INFO:tensorflow:Evaluation [9/10]
+INFO:tensorflow:Evaluation [10/10]
+2018-01-31 10:35:05.011513: I tensorflow/core/kernels/logging_ops.cc:79] eval/Accuracy[0.718]
+2018-01-31 10:35:05.011554: I tensorflow/core/kernels/logging_ops.cc:79] eval/Recall_5[0.876]
+INFO:tensorflow:Finished evaluation at 2018-01-31-02:35:05
+ydwu=============555
+
+
+
+
+##################################################
+(1)
+##################################################
+
+(tf-py2-quan) ydwu@aries:~/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/ydwu-test$ ./run-eval_image_classifier.sh 
+<module 'tensorflow' from '/home/ydwu/anaconda2/envs/tf-py2-quan/lib/python2.7/site-packages/tensorflow/__init__.pyc'>
+<module 'tensorflow.contrib.slim' from '/home/ydwu/anaconda2/envs/tf-py2-quan/lib/python2.7/site-packages/tensorflow/contrib/slim/__init__.pyc'>
+WARNING:tensorflow:From ../eval_image_classifier.py:104: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+<tensorflow.contrib.slim.python.slim.data.tfexample_decoder.TFExampleDecoder object at 0x7ff39bfcd710>
+/mllib/ImageNet/ILSVRC2012_tensorflow/validation-*
+<class 'tensorflow.python.ops.io_ops.TFRecordReader'>
+Select the dataset--->ok
+Select the model--->ok
+loads data--->ok
+INFO:tensorflow:Scale of 0 disables regularizer.
+WARNING:tensorflow:From ../eval_image_classifier.py:171: streaming_accuracy (from tensorflow.contrib.metrics.python.ops.metric_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.metrics.accuracy. Note that the order of the labels and predictions arguments has been switched.
+WARNING:tensorflow:From ../eval_image_classifier.py:173: streaming_recall_at_k (from tensorflow.contrib.metrics.python.ops.metric_ops) is deprecated and will be removed after 2016-11-08.
+Instructions for updating:
+Please use `streaming_sparse_recall_at_k`, and reshape labels from [batch_size] to [batch_size, 1].
+INFO:tensorflow:Evaluating /home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp2/mobilenet_v1_1.0_224.ckpt
+
+/home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp2/mobilenet_v1_1.0_224.ckpt
+/tmp/tfmodel/
+1000.0
+[<tf.Tensor 'recall_at_5/update_op:0' shape=() dtype=float32>, <tf.Tensor 'accuracy/update_op:0' shape=() dtype=float32>]
+ydwu=============444
+INFO:tensorflow:Starting evaluation at 2018-03-02-03:38:04
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp2/mobilenet_v1_1.0_224.ckpt
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Evaluation [100/1000]
+INFO:tensorflow:Evaluation [200/1000]
+INFO:tensorflow:Evaluation [300/1000]
+INFO:tensorflow:Evaluation [400/1000]
+INFO:tensorflow:Evaluation [500/1000]
+INFO:tensorflow:Evaluation [600/1000]
+INFO:tensorflow:Evaluation [700/1000]
+INFO:tensorflow:Evaluation [800/1000]
+INFO:tensorflow:Evaluation [900/1000]
+INFO:tensorflow:Evaluation [1000/1000]
+eval/Accuracy[0.70748]
+eval/Recall_5[0.89534]
+INFO:tensorflow:Finished evaluation at 2018-03-02-04:01:41
+ydwu=============555
+
+
+
+
+
+
+##################################################
+(2)
+##################################################
+
+(tf-py2-quan) ydwu@aries:~/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/ydwu-test$ ./run-eval_image_classifier.sh 
+<module 'tensorflow' from '/home/ydwu/anaconda2/envs/tf-py2-quan/lib/python2.7/site-packages/tensorflow/__init__.pyc'>
+<module 'tensorflow.contrib.slim' from '/home/ydwu/anaconda2/envs/tf-py2-quan/lib/python2.7/site-packages/tensorflow/contrib/slim/__init__.pyc'>
+WARNING:tensorflow:From ../eval_image_classifier.py:104: get_or_create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.get_or_create_global_step
+<tensorflow.contrib.slim.python.slim.data.tfexample_decoder.TFExampleDecoder object at 0x7fcbe13f4750>
+/mllib/ImageNet/ILSVRC2012_tensorflow/validation-*
+<class 'tensorflow.python.ops.io_ops.TFRecordReader'>
+Select the dataset--->ok
+Select the model--->ok
+loads data--->ok
+INFO:tensorflow:Scale of 0 disables regularizer.
+WARNING:tensorflow:From ../eval_image_classifier.py:171: streaming_accuracy (from tensorflow.contrib.metrics.python.ops.metric_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.metrics.accuracy. Note that the order of the labels and predictions arguments has been switched.
+WARNING:tensorflow:From ../eval_image_classifier.py:173: streaming_recall_at_k (from tensorflow.contrib.metrics.python.ops.metric_ops) is deprecated and will be removed after 2016-11-08.
+Instructions for updating:
+Please use `streaming_sparse_recall_at_k`, and reshape labels from [batch_size] to [batch_size, 1].
+INFO:tensorflow:Evaluating /home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp2/mobilenet_v1_1.0_224.ckpt
+
+/home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp2/mobilenet_v1_1.0_224.ckpt
+/tmp/tfmodel/
+10
+[<tf.Tensor 'recall_at_5/update_op:0' shape=() dtype=float32>, <tf.Tensor 'accuracy/update_op:0' shape=() dtype=float32>]
+ydwu=============444
+INFO:tensorflow:Starting evaluation at 2018-03-02-04:03:25
+INFO:tensorflow:Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/ydwu/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/scripts/mobilenet/tmp2/mobilenet_v1_1.0_224.ckpt
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Evaluation [1/10]
+INFO:tensorflow:Evaluation [2/10]
+INFO:tensorflow:Evaluation [3/10]
+INFO:tensorflow:Evaluation [4/10]
+INFO:tensorflow:Evaluation [5/10]
+INFO:tensorflow:Evaluation [6/10]
+INFO:tensorflow:Evaluation [7/10]
+INFO:tensorflow:Evaluation [8/10]
+INFO:tensorflow:Evaluation [9/10]
+INFO:tensorflow:Evaluation [10/10]
+eval/Accuracy[0.718]
+eval/Recall_5[0.876]
+INFO:tensorflow:Finished evaluation at 2018-03-02-04:03:42
+ydwu=============555

@@ -1,0 +1,8 @@
+*.pyc
+*ckpt.*
+checkpoint
+*.pbtxt
+*.pb
+network/*
+klyu-quantized_graph_python/*
+visualation/logs_test/*
