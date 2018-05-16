@@ -1,0 +1,5 @@
+jb-tf-klyu-quant:
+
+dzhang_freeze_and_quantized.sh and dzhang_statistical_requant_min_max.sh
+两个文件唯一不同的是，它们分别调用的是./tools/dzhang_quantize_graph.py 和 
+./tools/dzhang_statistical_requant_min_max.py。

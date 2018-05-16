@@ -1,0 +1,195 @@
+
+(tf-py2-quan) ydwu@aries:~/framework/tensorflow22/tensorflow/tensorflow-models/research/slim/ydwu-test$ ./run-export_mobilenet.sh 
+
+*******
+Running label_image using the graph
+*******
+2018-03-09 16:19:24.517651: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2018-03-09 16:19:24.626873: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.626943: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.626958: I tensorflow/core/kernels/conv_ops.cc:112] =======#### other conv
+2018-03-09 16:19:24.631176: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.631197: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.631993: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.632026: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.632401: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.632417: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.641063: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.641144: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.643790: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.643809: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.643840: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.643854: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.643865: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.648796: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.648858: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.650281: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.650308: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.650357: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.650373: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.651660: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.651711: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.652357: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.652381: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.652410: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.652425: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.652437: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.653212: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.653234: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.657130: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.657159: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.657187: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.657202: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.658364: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.658410: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.659165: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.659189: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.659220: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.659237: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.659252: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.660480: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.660502: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.661240: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.661259: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.661278: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.661290: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.661694: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.661730: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.662328: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.662368: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.662411: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.662438: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.662448: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.663015: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.663058: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.663652: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.663671: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.663690: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.663703: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.664261: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.664285: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.664804: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.664843: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.664880: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.664893: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.664903: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.666039: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.666071: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.666881: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.666900: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.666918: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.666930: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.667410: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.667428: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.667759: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.667778: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.667796: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.667809: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.667819: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.668518: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.668538: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.668975: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.668992: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.669010: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.669022: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.669489: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.669528: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.669995: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.670026: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.670069: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.670082: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.670092: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.671472: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.671493: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.671848: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.671876: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.671903: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.671917: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.672430: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.672452: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.672736: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.672761: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.672781: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.672794: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.672804: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.673953: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.673973: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.674243: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.674260: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.674278: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.674290: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.674797: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.674813: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.675097: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.675114: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.675132: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.675144: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.675154: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.676199: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.676219: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.676519: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.676568: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.676605: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.676618: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.677000: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.677118: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.677542: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.677572: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.677605: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.677630: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.677652: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.678839: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.678871: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.679279: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.679298: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.679320: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.679332: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.679740: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.679759: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.680301: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.680343: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.680383: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.680401: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.680412: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.681531: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.681551: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.681829: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.681858: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.681877: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.681889: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.682140: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.682156: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.682334: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.682351: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.682369: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.682381: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.682391: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.683365: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.683390: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.683756: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.683775: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.683794: I tensorflow/core/kernels/depthwise_conv_op.cc:525] YDWU === no-quan-depthwise_conv_weight
+2018-03-09 16:19:24.683806: I tensorflow/core/kernels/depthwise_conv_op.cc:526] YDWU ======================================== xxx
+2018-03-09 16:19:24.684302: I tensorflow/core/kernels/depthwise_conv_op.cc:682] YDWU === no-quan-depthwise_conv_output
+2018-03-09 16:19:24.684318: I tensorflow/core/kernels/depthwise_conv_op.cc:683] YDWU ======================================== xxx
+2018-03-09 16:19:24.684633: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.684669: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.684701: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.684714: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.684724: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.686429: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.686462: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.686702: I ./tensorflow/core/framework/numeric_op.h:193] YDWU === no-quan-relu_output
+2018-03-09 16:19:24.686740: I ./tensorflow/core/framework/numeric_op.h:194] YDWU ======================================== xxx
+2018-03-09 16:19:24.686806: I tensorflow/core/kernels/conv_ops.cc:588] YDWU === no-quan-conv_weight
+2018-03-09 16:19:24.686823: I tensorflow/core/kernels/conv_ops.cc:589] YDWU ======================================== xxx
+2018-03-09 16:19:24.686833: I tensorflow/core/kernels/conv_ops.cc:78] =======#### when 2D kernel, conv --> matrix multiplication
+2018-03-09 16:19:24.687497: I tensorflow/core/kernels/conv_ops.cc:730] YDWU === no-quan-conv_output
+2018-03-09 16:19:24.687515: I tensorflow/core/kernels/conv_ops.cc:731] YDWU ======================================== xxx
+2018-03-09 16:19:24.687571: I tensorflow/core/kernels/softmax_op.cc:66] ================== softmax_op_functor.h ==============
+2018-03-09 16:19:24.687593: I ./tensorflow/core/kernels/softmax_op_functor.h:52] =========== softmax_op_functor.h ==============
+2018-03-09 16:19:24.689646: I tensorflow/examples/label_image/main.cc:250] 653:military uniform (653): 0.869648
+2018-03-09 16:19:24.689670: I tensorflow/examples/label_image/main.cc:250] 723:ping-pong ball (723): 0.0285956
+2018-03-09 16:19:24.689684: I tensorflow/examples/label_image/main.cc:250] 440:bearskin, busby, shako (440): 0.0151946
+2018-03-09 16:19:24.689695: I tensorflow/examples/label_image/main.cc:250] 753:racket, racquet (753): 0.0108004
+2018-03-09 16:19:24.689706: I tensorflow/examples/label_image/main.cc:250] 982:ballplayer, baseball player (982): 0.00568755

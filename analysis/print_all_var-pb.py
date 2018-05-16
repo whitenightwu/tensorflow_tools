@@ -16,13 +16,14 @@ from tensorflow.python import pywrap_tensorflow
 
 ## using dirctly summary_graph.sh!!!!!!!!
 
+
+# CUDA_VISIBLE_DEVICES="" python print_all_var-pb.py 
+
 #######################################################
 ################## pb
 
-
-output_graph_path='/home/ydwu/project/fake-to-quant/network/quantized_graph.pb'
-
-
+# output_graph_path='/home/ydwu/project/mobilenet-quant-Q_DW/graph_transforms-Q_DW/original_model/mobilenet_quant_frozen.pb'
+output_graph_path='/home/ydwu/project/mobilenet-quant-Q_DW/graph_transforms-Q_DW/result_model/quantized_graph.pb'
 
 
 
@@ -34,6 +35,8 @@ with tf.Graph().as_default():
 
     with tf.Session() as sess:
 
+
+        print("start!!!!")
 
         ########  plan A
         # sess.run(tf.global_variables_initializer())
@@ -60,14 +63,17 @@ with tf.Graph().as_default():
         ops = sess.graph.get_operations()
         for op in ops:
             if op.type == 'Const':
-                # pattern=re.compile(r'^max')
-                # if re.match(pattern, op.name):
-                if re.search(r'(max)|(min)', op.name) :
+                # pattern = re.compile(r'(max)|(min)')
+                pattern = re.compile(r'weights_quant')
+                # pattern = re.compile(r'weights$')
+                if re.search(pattern, op.name):
+                # if re.search(r'(max)|(min)', op.name) :
                     print(op.name)
                     ydwu_tensor = op.outputs[0]
                     print(tf.contrib.util.constant_value(ydwu_tensor))
 
-                
+# MobilenetV1/Conv2d_13_depthwise/depthwise_weights
+
 # ydwu_tensor = op.outputs[0].name
 # print(sess.graph.get_tensor_by_name(ydwu_tensor))
 

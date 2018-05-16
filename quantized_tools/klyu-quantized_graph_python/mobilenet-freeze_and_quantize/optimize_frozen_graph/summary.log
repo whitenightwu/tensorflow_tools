@@ -1,0 +1,162 @@
+
+(tf-py2-quan) ydwu@aries:~/framework/tensorflow22/tensorflow$ bazel-bin/tensorflow/tools/graph_transforms/summarize_graph --in_graph=/home/ydwu/framework/tensorflow22/tensorflow/ydwu-learning_tf/platerec_model_graph_10928f2_opt_reshape.pb --print_structure=true
+
+Found 1 possible inputs: (name=Placeholder, type=float(1), shape=None) 
+No variables spotted.
+Found 1 possible outputs: (name=ArgMax, op=ArgMax) 
+Found 3819239 (3.82M) const parameters, 0 (0) variable parameters, and 0 control_edges
+Op types used: 60 Const, 28 BiasAdd, 27 Relu, 14 Conv2D, 13 DepthwiseConv2dNative, 2 Reshape, 1 ArgMax, 1 AvgPool, 1 ExpandDims, 1 MatMul, 1 Placeholder
+To use with tensorflow/tools/benchmark:benchmark_model try these arguments:
+bazel run tensorflow/tools/benchmark:benchmark_model -- --graph=/home/ydwu/framework/tensorflow22/tensorflow/ydwu-learning_tf/platerec_model_graph_10928f2_opt_reshape.pb --show_flops --input_layer=Placeholder --input_layer_type=float --input_layer_shape= --output_layer=ArgMax
+
+MobileNet/conv_ds_14/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [1024] values: -2.9526391 -1.37061763 -2.58394885...>
+MobileNet/conv_ds_14/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,1024,1024] values: [[[0.0191533081 -0.0138808275 0.0294339061]]]...>
+MobileNet/conv_ds_14/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [1024] values: -0.811329663 -0.143253088 -0.246931151...>
+MobileNet/conv_ds_14/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,1024,1] values: [[[-1.22699189][-0.00727406843][-0.243331268]]]...>
+MobileNet/conv_ds_13/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [1024] values: -2.04703236 -1.42196679 -0.0927921236...>
+MobileNet/conv_ds_13/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,512,1024] values: [[[0.0380482189 0.00567497266 -0.0130174579]]]...>
+MobileNet/conv_ds_13/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: 0.6881513 -0.360690564 -0.79230696...>
+MobileNet/conv_ds_13/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,512,1] values: [[[-0.386385888][-0.00598893547][-0.186517894]]]...>
+MobileNet/conv_ds_12/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.929721713 -0.457545936 0.104824267...>
+MobileNet/conv_ds_12/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,512,512] values: [[[-0.0282624364 -0.0281401798 0.0538655631]]]...>
+MobileNet/conv_ds_12/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.814243436 1.94062936 0.609113574...>
+MobileNet/conv_ds_12/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,512,1] values: [[[-0.0246230606][-0.0776163116][0.210793883]]]...>
+MobileNet/conv_ds_11/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.248432577 -0.116877422 -0.0521580391...>
+MobileNet/conv_ds_11/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,512,512] values: [[[-0.0120582953 0.00927324221 0.000846001]]]...>
+MobileNet/conv_ds_11/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -1.9871701 -0.618987918 -0.14748171...>
+MobileNet/conv_ds_11/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,512,1] values: [[[-1.67342925][-0.662376404][-0.174783617]]]...>
+MobileNet/conv_ds_10/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.658223 -0.437151104 0.658155501...>
+MobileNet/conv_ds_10/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,512,512] values: [[[0.039647352 0.0534070395 -0.0315060504]]]...>
+MobileNet/conv_ds_10/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.516808033 -0.39318189 1.46356535...>
+MobileNet/conv_ds_10/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,512,1] values: [[[-0.594028831][-0.0290973689][-0.402625293]]]...>
+MobileNet/conv_ds_9/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: 0.319677055 0.34068504 -0.129514888...>
+MobileNet/conv_ds_9/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,512,512] values: [[[-0.0389086753 -0.0186291616 -0.0402589105]]]...>
+MobileNet/conv_ds_9/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.694699347 -0.81721288 0.696122706...>
+MobileNet/conv_ds_9/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,512,1] values: [[[0.196080238][0.0339818634][1.33074]]]...>
+MobileNet/conv_ds_8/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: -0.592481673 -1.05905902 0.117207967...>
+MobileNet/conv_ds_8/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,512,512] values: [[[0.0179549679 -0.00464189798 -0.0256915744]]]...>
+MobileNet/conv_ds_8/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: 0.171720177 0.8957932 1.17670476...>
+MobileNet/conv_ds_8/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,512,1] values: [[[-0.126953915][-0.575809896][-0.431709945]]]...>
+MobileNet/conv_ds_7/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [512] values: 1.02931941 2.52062345 1.8744185...>
+MobileNet/conv_ds_7/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,256,512] values: [[[-0.0244980026 0.0582890473 -0.037489377]]]...>
+MobileNet/conv_ds_7/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [256] values: -0.160281822 0.66264528 2.2830162...>
+MobileNet/conv_ds_7/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,256,1] values: [[[0.28894937][0.635831833][-0.278617024]]]...>
+MobileNet/conv_ds_6/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [256] values: -0.15745984 0.322571814 0.420585752...>
+MobileNet/conv_ds_6/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,256,256] values: [[[0.0813106447 -0.0999101177 -0.0465237685]]]...>
+MobileNet/conv_ds_6/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [256] values: -0.122373603 -0.745741308 -0.589238226...>
+MobileNet/conv_ds_6/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,256,1] values: [[[-0.351534247][0.226130381][-0.120878071]]]...>
+MobileNet/conv_ds_5/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [256] values: 1.73783576 1.25675011 -0.124187082...>
+MobileNet/conv_ds_5/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,128,256] values: [[[-0.0063906149 -0.167376906 0.0277208649]]]...>
+MobileNet/conv_ds_5/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [128] values: -0.0208050571 0.679575682 1.80387414...>
+MobileNet/conv_ds_5/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,128,1] values: [[[0.0448658429][0.350435346][0.161538303]]]...>
+MobileNet/conv_ds_4/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [128] values: -0.440080464 0.213454857 0.169586837...>
+MobileNet/conv_ds_4/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,128,128] values: [[[-0.128194585 -0.071933113 -0.0376395546]]]...>
+MobileNet/conv_ds_4/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [128] values: -1.32444048 0.0339343548 -0.251018018...>
+MobileNet/conv_ds_4/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,128,1] values: [[[-0.0574974529][0.257866114][-0.204971895]]]...>
+MobileNet/conv_ds_3/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [128] values: -0.178232536 0.206779882 0.844113529...>
+MobileNet/conv_ds_3/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,64,128] values: [[[0.0794541612 0.105397403 0.114843063]]]...>
+MobileNet/conv_ds_3/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [64] values: -0.0207360331 1.57653987 -2.47689342...>
+MobileNet/conv_ds_3/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,64,1] values: [[[-0.830072284][-0.0834487677][0.0567336828]]]...>
+MobileNet/conv_ds_2/pointwise_conv/biases (Const): [], value=Tensor<type: float shape: [64] values: 1.18539035 0.917049408 0.959561229...>
+MobileNet/conv_ds_2/pointwise_conv/weights (Const): [], value=Tensor<type: float shape: [1,1,32,64] values: [[[0.00361574301 -0.146571517 -0.29096362]]]...>
+MobileNet/conv_ds_2/depthwise_conv/biases (Const): [], value=Tensor<type: float shape: [32] values: -0.0283300616 -0.992345 0.771137476...>
+MobileNet/conv_ds_2/depthwise_conv/depthwise_weights (Const): [], value=Tensor<type: float shape: [3,3,32,1] values: [[[-0.634956658][0.0590786673][0.546809793]]]...>
+MobileNet/conv_1/biases (Const): [], value=Tensor<type: float shape: [32] values: 0.626385033 1.14329457 1.48390627...>
+MobileNet/conv_1/weights (Const): [], value=Tensor<type: float shape: [3,3,3,32] values: [[[-0.636975884 -0.885405958 -1.38834381]]]...>
+ArgMax/dimension (Const): [], value=Tensor<type: int32 shape: [] values: 2>
+Reshape/shape (Const): [], value=Tensor<type: int32 shape: [3] values: -1 8 76>
+MobileNet/fc_16/biases (Const): [], value=Tensor<type: float shape: [608] values: -5.9928956 -1.92526102 -2.66764712...>
+MobileNet/fc_16/weights (Const): [], value=Tensor<type: float shape: [1024,608] values: [-2.05307794 -3.98925877 -2.03889966]...>
+MobileNet/ReshapeModel/shape (Const): [], value=Tensor<type: int32 shape: [2] values: 1 1024>
+ExpandDims/dim (Const): [], value=Tensor<type: int32 shape: [] values: 0>
+
+
+Placeholder (Placeholder): []
+ExpandDims (ExpandDims): [Placeholder, ExpandDims/dim]
+MobileNet/conv_1/convolution (Conv2D): [ExpandDims, MobileNet/conv_1/weights]
+MobileNet/conv_1/BiasAdd (BiasAdd): [MobileNet/conv_1/convolution, MobileNet/conv_1/biases]
+MobileNet/conv_1/batch_norm/Relu (Relu): [MobileNet/conv_1/BiasAdd]
+MobileNet/conv_ds_2/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_1/batch_norm/Relu, MobileNet/conv_ds_2/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_2/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_2/depthwise_conv/depthwise, MobileNet/conv_ds_2/depthwise_conv/biases]
+MobileNet/conv_ds_2/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_2/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_2/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_2/dw_batch_norm/Relu, MobileNet/conv_ds_2/pointwise_conv/weights]
+MobileNet/conv_ds_2/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_2/pointwise_conv/convolution, MobileNet/conv_ds_2/pointwise_conv/biases]
+MobileNet/conv_ds_2/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_2/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_3/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_2/pw_batch_norm/Relu, MobileNet/conv_ds_3/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_3/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_3/depthwise_conv/depthwise, MobileNet/conv_ds_3/depthwise_conv/biases]
+MobileNet/conv_ds_3/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_3/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_3/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_3/dw_batch_norm/Relu, MobileNet/conv_ds_3/pointwise_conv/weights]
+MobileNet/conv_ds_3/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_3/pointwise_conv/convolution, MobileNet/conv_ds_3/pointwise_conv/biases]
+MobileNet/conv_ds_3/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_3/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_4/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_3/pw_batch_norm/Relu, MobileNet/conv_ds_4/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_4/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_4/depthwise_conv/depthwise, MobileNet/conv_ds_4/depthwise_conv/biases]
+MobileNet/conv_ds_4/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_4/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_4/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_4/dw_batch_norm/Relu, MobileNet/conv_ds_4/pointwise_conv/weights]
+MobileNet/conv_ds_4/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_4/pointwise_conv/convolution, MobileNet/conv_ds_4/pointwise_conv/biases]
+MobileNet/conv_ds_4/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_4/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_5/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_4/pw_batch_norm/Relu, MobileNet/conv_ds_5/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_5/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_5/depthwise_conv/depthwise, MobileNet/conv_ds_5/depthwise_conv/biases]
+MobileNet/conv_ds_5/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_5/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_5/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_5/dw_batch_norm/Relu, MobileNet/conv_ds_5/pointwise_conv/weights]
+MobileNet/conv_ds_5/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_5/pointwise_conv/convolution, MobileNet/conv_ds_5/pointwise_conv/biases]
+MobileNet/conv_ds_5/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_5/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_6/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_5/pw_batch_norm/Relu, MobileNet/conv_ds_6/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_6/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_6/depthwise_conv/depthwise, MobileNet/conv_ds_6/depthwise_conv/biases]
+MobileNet/conv_ds_6/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_6/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_6/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_6/dw_batch_norm/Relu, MobileNet/conv_ds_6/pointwise_conv/weights]
+MobileNet/conv_ds_6/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_6/pointwise_conv/convolution, MobileNet/conv_ds_6/pointwise_conv/biases]
+MobileNet/conv_ds_6/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_6/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_7/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_6/pw_batch_norm/Relu, MobileNet/conv_ds_7/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_7/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_7/depthwise_conv/depthwise, MobileNet/conv_ds_7/depthwise_conv/biases]
+MobileNet/conv_ds_7/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_7/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_7/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_7/dw_batch_norm/Relu, MobileNet/conv_ds_7/pointwise_conv/weights]
+MobileNet/conv_ds_7/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_7/pointwise_conv/convolution, MobileNet/conv_ds_7/pointwise_conv/biases]
+MobileNet/conv_ds_7/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_7/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_8/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_7/pw_batch_norm/Relu, MobileNet/conv_ds_8/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_8/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_8/depthwise_conv/depthwise, MobileNet/conv_ds_8/depthwise_conv/biases]
+MobileNet/conv_ds_8/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_8/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_8/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_8/dw_batch_norm/Relu, MobileNet/conv_ds_8/pointwise_conv/weights]
+MobileNet/conv_ds_8/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_8/pointwise_conv/convolution, MobileNet/conv_ds_8/pointwise_conv/biases]
+MobileNet/conv_ds_8/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_8/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_9/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_8/pw_batch_norm/Relu, MobileNet/conv_ds_9/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_9/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_9/depthwise_conv/depthwise, MobileNet/conv_ds_9/depthwise_conv/biases]
+MobileNet/conv_ds_9/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_9/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_9/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_9/dw_batch_norm/Relu, MobileNet/conv_ds_9/pointwise_conv/weights]
+MobileNet/conv_ds_9/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_9/pointwise_conv/convolution, MobileNet/conv_ds_9/pointwise_conv/biases]
+MobileNet/conv_ds_9/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_9/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_10/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_9/pw_batch_norm/Relu, MobileNet/conv_ds_10/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_10/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_10/depthwise_conv/depthwise, MobileNet/conv_ds_10/depthwise_conv/biases]
+MobileNet/conv_ds_10/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_10/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_10/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_10/dw_batch_norm/Relu, MobileNet/conv_ds_10/pointwise_conv/weights]
+MobileNet/conv_ds_10/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_10/pointwise_conv/convolution, MobileNet/conv_ds_10/pointwise_conv/biases]
+MobileNet/conv_ds_10/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_10/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_11/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_10/pw_batch_norm/Relu, MobileNet/conv_ds_11/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_11/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_11/depthwise_conv/depthwise, MobileNet/conv_ds_11/depthwise_conv/biases]
+MobileNet/conv_ds_11/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_11/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_11/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_11/dw_batch_norm/Relu, MobileNet/conv_ds_11/pointwise_conv/weights]
+MobileNet/conv_ds_11/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_11/pointwise_conv/convolution, MobileNet/conv_ds_11/pointwise_conv/biases]
+MobileNet/conv_ds_11/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_11/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_12/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_11/pw_batch_norm/Relu, MobileNet/conv_ds_12/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_12/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_12/depthwise_conv/depthwise, MobileNet/conv_ds_12/depthwise_conv/biases]
+MobileNet/conv_ds_12/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_12/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_12/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_12/dw_batch_norm/Relu, MobileNet/conv_ds_12/pointwise_conv/weights]
+MobileNet/conv_ds_12/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_12/pointwise_conv/convolution, MobileNet/conv_ds_12/pointwise_conv/biases]
+MobileNet/conv_ds_12/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_12/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_13/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_12/pw_batch_norm/Relu, MobileNet/conv_ds_13/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_13/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_13/depthwise_conv/depthwise, MobileNet/conv_ds_13/depthwise_conv/biases]
+MobileNet/conv_ds_13/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_13/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_13/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_13/dw_batch_norm/Relu, MobileNet/conv_ds_13/pointwise_conv/weights]
+MobileNet/conv_ds_13/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_13/pointwise_conv/convolution, MobileNet/conv_ds_13/pointwise_conv/biases]
+MobileNet/conv_ds_13/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_13/pointwise_conv/BiasAdd]
+MobileNet/conv_ds_14/depthwise_conv/depthwise (DepthwiseConv2dNative): [MobileNet/conv_ds_13/pw_batch_norm/Relu, MobileNet/conv_ds_14/depthwise_conv/depthwise_weights]
+MobileNet/conv_ds_14/depthwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_14/depthwise_conv/depthwise, MobileNet/conv_ds_14/depthwise_conv/biases]
+MobileNet/conv_ds_14/dw_batch_norm/Relu (Relu): [MobileNet/conv_ds_14/depthwise_conv/BiasAdd]
+MobileNet/conv_ds_14/pointwise_conv/convolution (Conv2D): [MobileNet/conv_ds_14/dw_batch_norm/Relu, MobileNet/conv_ds_14/pointwise_conv/weights]
+MobileNet/conv_ds_14/pointwise_conv/BiasAdd (BiasAdd): [MobileNet/conv_ds_14/pointwise_conv/convolution, MobileNet/conv_ds_14/pointwise_conv/biases]
+MobileNet/conv_ds_14/pw_batch_norm/Relu (Relu): [MobileNet/conv_ds_14/pointwise_conv/BiasAdd]
+MobileNet/avg_pool_15/AvgPool (AvgPool): [MobileNet/conv_ds_14/pw_batch_norm/Relu]
+MobileNet/ReshapeModel (Reshape): [MobileNet/avg_pool_15/AvgPool, MobileNet/ReshapeModel/shape]
+MobileNet/fc_16/MatMul (MatMul): [MobileNet/ReshapeModel, MobileNet/fc_16/weights]
+MobileNet/fc_16/BiasAdd (BiasAdd): [MobileNet/fc_16/MatMul, MobileNet/fc_16/biases]
+Reshape (Reshape): [MobileNet/fc_16/BiasAdd, Reshape/shape]
+ArgMax (ArgMax): [Reshape, ArgMax/dimension]
