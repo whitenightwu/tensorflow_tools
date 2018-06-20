@@ -32,4 +32,3 @@ for key in var_to_shape_map:
     print(reader.get_tensor(key))
 
 
-
