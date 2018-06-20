@@ -22,6 +22,7 @@ pip install /tmp/tensorflow_pkg/
 ####
 (1)
 bazel build tensorflow/tools/graph_transforms:transform_graph
+# the 'transform_graph' is a name in 'py_library()' of 'BUILD' file.
 or
 bazel build tensorflow/contrib/quantize/python:quantize_graph
 or
@@ -36,6 +37,8 @@ bazel build tensorflow/tools/graph_transforms:summarize_graph
 (4)
 bazel build --config=opt tensorflow/core/kernels:conv_ops
 bazel build -c opt --jobs 1 //tensorflow/cc:tutorials_example_trainer
+
+bazel build --config=opt --config=cuda tensorflow/core/common_runtime_ring_reducer_test
 
 ####
 sleep 1
