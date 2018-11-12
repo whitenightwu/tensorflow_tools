@@ -15,7 +15,7 @@ echo "#####################################################################"
 echo "####################### summarize_graph #######################"
 echo "#####################################################################"
 
-/home/ydwu/framework/tensorflow1.7/bazel-bin/tensorflow/tools/graph_transforms/summarize_graph \
+/home/ydwu/framework/tensorflow/bazel-bin/tensorflow/tools/graph_transforms/summarize_graph \
     --in_graph=${PB_MODEL} \
     --print_structure=true
 

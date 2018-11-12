@@ -63,7 +63,7 @@ from tensorflow.python.platform import gfile
 import sys
 
 
-INPUT_GRAPH='/home/ydwu/datasets/squeezenet-20180204-160909/20180204-160909/model-20180204-160909.meta'
+INPUT_GRAPH='/home/ydwu/project/Optimize_Model_Tools/mobilenet/model-20180928-093249.ckpt-186752.meta'
 OUTPUT_EVENTS='/tmp/tf-ydwu'
 
 if len(sys.argv) == 3:
