@@ -1,0 +1,3 @@
+[submodule "Tensorflow-Cookbook"]
+	path = Tensorflow-Cookbook
+	url = https://github.com/taki0112/Tensorflow-Cookbook.git
