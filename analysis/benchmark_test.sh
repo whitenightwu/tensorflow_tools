@@ -18,3 +18,37 @@
 # --show_summary=true   \
 # --show_flops=true   \
 # --logtostderr
+
+
+# ./bazel-bin/tensorflow/tools/benchmark/benchmark_model \
+#     --graph="/home/ydwu/datasets/squeezenet-20180204-160909/frozen_eval_graph.pb" \
+#     --input_layer="Placeholder:0" \
+#     --input_layer_shape="1,160,160,3" \
+#     --input_layer_type="float" \
+#     --output_layer="embeddings:0"
+
+
+
+# ./bazel-bin/tensorflow/tools/benchmark/benchmark_model \
+#     --graph="/home/ydwu/datasets/mtcnn/mtcnn_freezed_model.pb" \
+#     --input_layer="pnet/input:0" \
+#     --input_layer_shape="1,640,480,3" \
+#     --input_layer_type="float" \
+#     --output_layer="pnet/conv4-2/BiasAdd:0"
+
+
+./bazel-bin/tensorflow/tools/benchmark/benchmark_model \
+    --graph="/home/ydwu/datasets/mtcnn/mtcnn_freezed_model.pb" \
+    --input_layer="rnet/input:0" \
+    --input_layer_shape="1,24,24,3" \
+    --input_layer_type="float" \
+    --output_layer="rnet/prob1:0"
+
+    # --output_layer="rnet/conv5-2/conv5-2:0"
+
+# ./bazel-bin/tensorflow/tools/benchmark/benchmark_model \
+#     --graph="/home/ydwu/datasets/mtcnn/mtcnn_freezed_model.pb" \
+#     --input_layer="onet/input:0" \
+#     --input_layer_shape="1,48,48,3" \
+#     --input_layer_type="float" \
+#     --output_layer="onet/conv6-3/conv6-3:0"
