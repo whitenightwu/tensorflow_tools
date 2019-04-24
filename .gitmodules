@@ -1,3 +1,11 @@
 [submodule "Tensorflow-Cookbook"]
 	path = Tensorflow-Cookbook
 	url = https://github.com/taki0112/Tensorflow-Cookbook.git
+
+[submodule "tensorflow_template_application"]
+	path = tensorflow_template_application
+	url = https://github.com/tobegit3hub/tensorflow_template_application.git
+
+[submodule "Distributed-TensorFlow-Guide"]
+	path = Distributed-TensorFlow-Guide
+	url = https://github.com/tmulc18/Distributed-TensorFlow-Guide.git
