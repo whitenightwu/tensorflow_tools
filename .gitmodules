@@ -9,3 +9,8 @@
 [submodule "Distributed-TensorFlow-Guide"]
 	path = Distributed-TensorFlow-Guide
 	url = https://github.com/tmulc18/Distributed-TensorFlow-Guide.git
+
+[submodule "tools_of_using_tfRecord"]
+	path = use_tfRecord/more_tools
+	url = https://github.com/rainofmine/Tfrecord_detection_augmentor.git
+
