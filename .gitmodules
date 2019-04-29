@@ -14,3 +14,7 @@
 	path = use_tfRecord/more_tools
 	url = https://github.com/rainofmine/Tfrecord_detection_augmentor.git
 
+[submodule "TensorFlow-Examples"]
+	path = TensorFlow-Examples
+	url = https://github.com/aymericdamien/TensorFlow-Examples.git
+
