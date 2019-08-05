@@ -33,13 +33,16 @@ sess.run(init)
 for step in range(0,601):
     sess.run(train)
     if (step % 20) == 0:
-        print(step , sess.run(w) , sess.run(b))
+        print( "step:",step, "loss:",sess.run(loss),sess.run(W), sess.run(b))
 
 
+############################################################
+############################################################
+############################################################
 
+import tensorflow as tf
 
+hello = tf.constant('Hello, TensorFlow!')
 
-
-
-
-
+sess = tf.Session()
+print(sess.run(hello))

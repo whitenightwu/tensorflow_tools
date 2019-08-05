@@ -38,9 +38,3 @@ saver.restore(sess, os.path.join(model_dir, model_name))
 
 这样就完成了不读取ckpt文件中’layer1’, ‘layer2’权重
 
-
------------------------
-作者：Double_V_ 
-来源：CSDN 
-原文：https://blog.csdn.net/qq_25737169/article/details/78125061 
-版权声明：本文为博主原创文章，转载请附上博文链接！

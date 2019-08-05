@@ -15,11 +15,6 @@ from tensorflow.python import pywrap_tensorflow
 
 #######################################################
 ################## ckpt
-# logdir='./output/'
-
-# ckpt_dir='/home/ydwu/framework/tensorflow/ydwu-quan-2/shwu-mobilenet/result_models/20180402-164645/model-20180402-164645.ckpt-2293'
-
-# ckpt_dir='/home/ydwu/project/ydwu-quan-2/shwu-mobilenet/result_models/20180409-114811/model-20180409-114811.ckpt-17704'
 
 ckpt_dir='/home/ydwu/framework/tensorflow-models/research/slim/nets/ydwu-mobilenet/quan-train/model.ckpt-129'
 

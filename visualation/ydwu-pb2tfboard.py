@@ -22,30 +22,17 @@ if len(sys.argv) == 3:
 
 else:    
     ####################### 
-    # INPUT_GRAPH="/home/ydwu/framework/tensorflow22/tensorflow/ydwu-quan_tools/network/tmp/mobilenet_v1_1.0_224/unfrozen_graph.pb"
-    # INPUT_GRAPH='/home/ydwu/framework/tensorflow22/tensorflow/ydwu-quan-2/shwu-mobilenet/result_models/05-frozen_eval/frozen_eval_graph.pb'
+    INPUT_GRAPH="/home/ydwu/project8/ghostVLAD/white/models/20190730-161927/expert-graph.pb"
 
-    # INPUT_GRAPH="/home/ydwu/project/mobilenet-quant-Q_DW/graph_transforms-Q_DW/result_model/quantized_graph.pb"
-    # INPUT_GRAPH="/home/ydwu/project/mobilenet-quant-Q_DW/quantization-Q_DW/result_model/quantization.pb"
-
-    INPUT_GRAPH="/home/ydwu/project/freeze_graph/frozen_eval_graph.pb"
-
+    
     ####################### 
     
-    # OUTPUT_EVENTS="/tmp/tf-ydwu"
-    
-    # OUTPUT_EVENTS="/home/ydwu/project/fake-to-quant/network/fn-graph_transforms"
-    # OUTPUT_EVENTS="/home/ydwu/project/facenet-quant/network/fn-graph_transforms"
-    
-    # OUTPUT_EVENTS="/home/ydwu/project/mobilenet-quant-Q_DW/graph_transforms-Q_DW/result_model"
-    # OUTPUT_EVENTS="/home/ydwu/project/mobilenet-quant-Q_DW/quantization-Q_DW/result_model"
-    
-    OUTPUT_EVENTS="/home/ydwu/project/freeze_graph"
+    OUTPUT_EVENTS="/tmp/tf-ydwu"
     
 ####################### 
 
-print "INPUT_GRAPH   = %r" % (INPUT_GRAPH) 
-print "OUTPUT_EVENTS = %r" % (OUTPUT_EVENTS)
+# print "INPUT_GRAPH   = %r" % (INPUT_GRAPH) 
+# print "OUTPUT_EVENTS = %r" % (OUTPUT_EVENTS)
 # print("INPUT_GRAPH = ", INPUT_GRAPH)
 # print("OUTPUT_EVENTS = ", OUTPUT_EVENTS)
 
