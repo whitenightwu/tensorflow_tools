@@ -21,8 +21,9 @@ if len(sys.argv) == 3:
     OUTPUT_EVENTS = sys.argv[2]
 
 else:    
-    ####################### 
-    INPUT_GRAPH="/home/ydwu/project8/ghostVLAD/white/models/20190730-161927/expert-graph.pb"
+    #######################
+    # INPUT_GRAPH='/home/wuyidong/models/SSD/ssd_mobilenet_v1_coco_2018_01_28/saved_model/saved_model.pb'
+    INPUT_GRAPH="/home/wuyidong/models/SSD/ssd_mobilenet_v1_coco_2018_01_28/frozen_inference_graph.pb"
 
     
     ####################### 

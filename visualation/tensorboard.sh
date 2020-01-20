@@ -3,7 +3,7 @@
 
 if [ ! $1 ]
 then
-    DIR_FILE=/home/ydwu/project/facenet-quant/graph_transforms/result_model
+    DIR_FILE=/tmp/tf-ydwu
     
 else
     DIR_FILE=$1

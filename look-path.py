@@ -13,6 +13,7 @@ import sys
 
 import tensorflow as tf
 print(tf.__path__)
+print(tf.__version__)
 
 
 # Return True if TensorFlow was build with CUDA(GPU)support
